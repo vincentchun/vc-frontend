@@ -583,7 +583,7 @@ function edit(query) {
 	if (document.querySelector(query).contentEditable == "true"){
 		document.querySelector(query).removeAttribute("contenteditable");
 	} else {
-		document.querySelector(query).contentEditable = "true"
+		document.querySelector(query).contentEditable = "true";
 	}
 }
 
