@@ -1,0 +1,283 @@
+/* VC Learning Stylesheet, version 20200723, 
+/* Page templates, Copyright: Vincent G. Chun, VC Learning. Used under license. */
+
+body {font-family:Arial, Tahoma, Verdana, sans-serif; color:; margin:0px; overflow-x:hidden; position:relative;}
+
+/* Basic Elements*/
+* {margin:0; padding:0;}
+p {font-size:1em; max-width:100%; margin:0.8em;}
+a {color:inherit; text-decoration:underline;}
+h1 {font-size:2em; margin:1em;}
+h2 {font-size:1.8em; margin:1em;}
+h3 {font-size:1.6em; margin:1em;}
+h4 {font-size:1.4em; margin:1em;}
+h5 {font-size:1.2em; margin:1em;}
+h6 {font-size:1em; margin:1em;}
+h7 {font-size:1em; margin:1em;}
+div {max-width:100%; position:relative;}
+img {max-width:100%; display:block;}
+iframe {display:block; margin:auto; max-width:100%; max-height:100%;}
+hr.s1 {color: #000; background:#000;} hr.s2 {color: #000; background:#000; height:2px;} hr.s3 {color:#333; background: linear-gradient(to right, #CCC, #333, #CCC);}
+li {margin-left:2em;}
+table {border-collapse: collapse;}
+table, td {border: 1px solid #000;} td {padding:4px;}
+input {padding:6px; font-size:16px;} button {padding:6px;}
+
+/*a:link {color:#0D0;} a:visited {color:#0D0} /*Link style*/
+[onClick] {cursor:pointer;}
+a.pganchor {position:relative; top:-60px;} /*Page anchor bookmarks, link with #id*/
+
+/* ## Colors ## */
+	/* Text */
+.bk {color:#000;} .gy, .gy8 {color:#888;} .gya {color:#AAA;}  gyc {color:#CCC;} .wh {color:#FFF;}
+.rd {color:#F11;} .or {color:#FA0;} .ye {color:#FF0;} .dy {color:#AA0;} .gn {color:#0F0;} .gc{color:#0F8} .cy {color:#0FF;} .bl {color:#00F;} .pr {color:#82F;}
+
+	/* Highlight <a> links */
+.highlight-links a {color:#0D0;} /*Within div*/
+a.hl {color:#0D0;} a.hl1  {color:#0D0; text-decoration:underline;}
+	/* On Hover */
+.hvrd:hover {color:red;} .hvor:hover {color:orange;} .hvye:hover {color:#D8D800;} .hvgn:hover {color:green;} .hvbl:hover {color:blue;} .hvpr:hover {color:purple;}
+.hvbdrd:hover {border: solid 1px red;} .hvbdor:hover {border: solid 1px orange;} .hvbdye:hover {border: solid 1px #D8D800;} .hvbdgn:hover {border: solid 1px #0F0;} .hvbdbl:hover {border: solid 1px blue;} .hvbdpr:hover {border: solid 1px purple;} .hvraise:hover {position:relative; top:-2; left:-2; box-shadow:2px 2px #00000080;} .press:active {top:0; left:0; box-shadow:none;}
+
+	/* Background */
+.whbk {background:#FFF; color:#000;} .bkwh {background:#000; color:#FFF;}
+.bggy2 {background:#222;} .bggy4 {background:#444;} .bggy6 {background:#666;} .bggy, .bggy8 {background:#888;} .bggya {background:#AAA;} .bggyc {background:#CCC;} .bggye {background:#EEE;} .bgbk {background:#000;} .bgwh {background:#FFF;}
+.bgrd {background:#F33;} .bgor {background:#FFA500;} .bgye {background:#FFFF00;} .bggn {background:#00FF00;} .bgug {background:#7FFF00;} .bgbl {background:#0000FF;} .bgpr {background:#8000F0;} .bgpp {background:#8A2BE2;}
+
+	/* Transparent */
+.tpwh {background:#FFFFFF80;} .tpbk, .tpbk80 {background:#00000080;} .tpbk90 {background:#00000090;} .tpbka0 {background:#000000A0;} .tpbkc0 {background:#000000C0;} 
+.op05 {opacity:0.5;} .op08 {opacity:0.8;}
+
+	/* Custom combo*/
+.blackbg {background:#000; color:#FFF;} .bgts {background:#6C9C49; color:#FFF;}
+.rainbow {background:linear-gradient(-135deg,#FF000040,#FF8C0040,#FFFF0040,#00FF0040,#0000FF40,#4B008240,#EE82EE40); padding:1px;}
+
+/*Custom Elements*/
+/* Box & child boxes*/
+.box, .ch-box >* {border: 1px solid #000; padding:10px; margin:10px;} .box1, .ch-box1 >* {border: 1px solid #00000033; padding:10px; margin:10px;}
+
+/* Buttons*/
+/* Minimalistic */
+.button, .ibutton {padding:12px 16px; border:1px solid #00000044; border-radius:6px; box-shadow: 4px 4px 4px #00000088, -4px -4px 4px #FFFFFFFF; text-align:center;text-decoration:none; font-size:16px; font-weight:bold; position:relative; background: #FFF;}/*raised*/
+.ibutton:hover {box-shadow: 2px 2px 2px #00000088, -2px -2px 2px #FFFFFFFF;}/*raised*/
+.ibutton:active {box-shadow: 2px 2px 2px #00000088 inset, -2px -2px 2px #FFFFFFFF inset; outline:none;}/*raised*/
+/* Other buttons */
+.button1 {padding:12px 16px; border:none; border-radius:6px; box-shadow: 4px 4px 4px #00000088, -4px -4px 4px #FFFFFFFF;}/*raised*/
+.button2 {/* background: #0AC124; Green */ border: none; border-radius:32px; color: white; padding: 12px 32px; text-align: center; text-decoration: none; font-size: 16px; font-weight:bold; position:relative; top:-12px;}
+
+.space {margin:16px;}
+
+/* Element Display */
+.block {display:block;}
+.inline {display:inline;}
+.inline-block {display:inline-block;}
+
+/*Element Positioning*/
+.center, .centchild > * {display:block; margin: auto auto;}
+.tcenter {text-align:center;} .tleft{text-align:left;} .tright {text-align:right;}
+.bottom-left {position:absolute; bottom:0px; left:0px;} .bottom {position:absolute; bottom:0px;}
+
+/*Margin & padding*/
+.margin, .margin12 {margin:12px;} .margin20 {margin:20px;} .margin30 {margin:30px;} .margin40 {margin:40px;} .margintb {margin-top: 20px; margin-bottom: 20px;} .pad, .pad12 {padding:12px;} .pad16 {padding:16px;} .pad20 {padding:20px;} .pad30 {padding:30px;} .pad40 {padding:40px;}
+.padl {padding-left:12px;} .padl2 {padding-left:24px;} .padl3 {padding-left:36px;} /*Use this to indent entire paragraphs*/
+.vspace {padding:12px; margin:20px 0px;}
+.vmid {vertical-align:middle;}
+.spaceout {padding:12px; margin:20px;}
+.spaceoutchildren > * {padding:12px; margin:12px;}
+.childmrgn > * {margin:6px;}
+
+/* Div size */
+.r16-9 {width:100%; padding-top:56.25%; position:relative;} .r16-9 > div {position:absolute; top:0; bottom:0; left:0; right:0;}
+
+/* Element Styles */
+.bdbk {border: 1px solid #000;} /* More types: dotted double groove ridge inset outset mix */
+.bddash {border: 1px dashed #000;}
+.shadow {box-shadow: 1px 1px 1px 1px #888; margin:4px;}
+.shadow2 {box-shadow:2px 2px 2px 2px rgba(0,0,0,0.4);}
+.raised {box-shadow: 4px 4px 4px #000000AA, -4px -4px 4px #FFFFFFAA;}
+.rnd4, .ch-rnd4 >* {border-radius: 4px;} .rnd6, .ch-rnd6>* {border-radius: 6px;} .rnd8, .ch-rnd8>* {border-radius: 8px;} .rndend .ch-rndend>* {border-radius:9999px; padding:0.5em;} .ellip, .ch-ellip>* {border-radius:50%;}
+.column240 {column-width:240px;}
+.pos {position:relative;} .posib {position:relative; display:inline-block;/*Shrink to content width*/} .overlay {position:absolute; top:0px; bottom:0px; left:0px; right:0px; width:100%; height:100%;}
+.imgbdr {padding:12px; background:#FFF;}
+
+/*## Flex ##*/
+.flexrow {display:flex; flex-flow:row wrap;}
+.flexcol {display:flex; flex-direction:column;}
+.flexrnw {display:flex; flex-flow:row nowrap;}
+.inline-flexc {display:inline-flex; flex-direction:column;}
+
+	/* justify-content  - along flex-direction*/
+.js {justify-content: flex-start;} .je {justify-content: flex-end;} .jc {justify-content: center;} .jb {justify-content: space-between;} .ja {justify-content: space-around;} .jv {justify-content: space-evenly;}
+
+	/* align-items - each item, cross-direction */
+.as {align-items: flex-start;} .ae {align-items: flex-end;} .ac {align-items: center;} .at {align-items: stretch;} .ab {align-items: baseline;}
+
+	/* align-content - all items as block, cross-direction */
+.cs {align-content: flex-start;} .ce {align-content: flex-end;} .cc {align-content: center;} .ct {align-content: stretch;} .ca {align-content: space-around;} .cb {align-content: space-between;}
+
+	/*flex 'n' per line*/
+div.f2l > div {flex: 0 0 48%} .f4l > div {flex: 0 0 24%;} .f6l > div {flex: 0 0 15%;} 
+	/*set on children, flex 'n' items, per line*/
+.f2i {flex: 0 0 48%} .f4i {flex: 0 0 24%;} .f6i {flex: 0 0 15%;} 
+
+/*## Grid ##*/
+.grid {display:grid;}
+/* Column widths*/
+.gcol20 {grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));} .gcol40 {grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));} 
+.gcol60 {grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));} .gcol80 {grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));}
+.gcol100 {grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));} .gcol120 {grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));} 
+.gcol140 {grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));} .gcol160 {grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));}
+.gcol180 {grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));} .gcol200 {grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));}
+.gcol220 {grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));} .gcol240 {grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));} 
+.gcol260 {grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));} .gcol280 {grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));}
+.gcol300 {grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));} .gcol320 {grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));}
+
+/* Column number*/
+.g2col {grid-template-columns: 1fr 1fr;} .g3col {grid-template-columns: repeat(3, 1fr);} .g4col {grid-template-columns: repeat(4, 1fr);} .g5col {grid-template-columns: repeat(5, 1fr);} .g6col {grid-template-columns: repeat(6, 1fr);}  .g7col {grid-template-columns: repeat(7, 1fr);} .g8col {grid-template-columns: repeat(8, 1fr);} .g9col {grid-template-columns: repeat(9, 1fr);} .g10col {grid-template-columns: repeat(10, 1fr);} .g11col {grid-template-columns: repeat(11, 1fr);} .g12col {grid-template-columns: repeat(12, 1fr);}
+
+.g2cola {grid-template-columns: auto auto;} .g3cola {grid-template-columns: repeat(3, auto);} .g4cola {grid-template-columns: repeat(4, auto);} .g5cola {grid-template-columns: repeat(5, auto);} .g6cola {grid-template-columns: repeat(6, auto);}  .g7cola {grid-template-columns: repeat(7, auto);} .g8cola {grid-template-columns: repeat(8, auto);} .g9cola {grid-template-columns: repeat(9, auto);} .g10cola {grid-template-columns: repeat(10, auto);} .g11cola {grid-template-columns: repeat(11, auto);} .g12cola {grid-template-columns: repeat(12, auto);}
+
+/* Row heights */
+.grow20 {grid-template-rows: repeat(auto-fill, minmax(20px, 1fr));} .grow40 {grid-template-rows: repeat(auto-fill, minmax(40px, 1fr));} 
+.grow60 {grid-template-rows: repeat(auto-fill, minmax(60px, 1fr));} .grow80 {grid-template-rows: repeat(auto-fill, minmax(80px, 1fr));}
+.grow100 {grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));} .grow120 {grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));} 
+.grow140 {grid-template-rows: repeat(auto-fill, minmax(140px, 1fr));} .grow160 {grid-template-rows: repeat(auto-fill, minmax(160px, 1fr));} 
+.grow180 {grid-template-rows: repeat(auto-fill, minmax(180px, 1fr));} .grow200 {grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));} 
+.grow220 {grid-template-rows: repeat(auto-fill, minmax(220px, 1fr));} .grow240 {grid-template-rows: repeat(auto-fill, minmax(240px, 1fr));} 
+.grow260 {grid-template-rows: repeat(auto-fill, minmax(260px, 1fr));} .grow280 {grid-template-rows: repeat(auto-fill, minmax(280px, 1fr));} 
+.grow300 {grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));} .grow320 {grid-template-rows: repeat(auto-fill, minmax(320px, 1fr));} 
+
+/* Row number*/
+.g2row {grid-template-rows: 1fr 1fr;} .g3row {grid-template-rows: repeat(3, 1fr);} .g4row {grid-template-rows: repeat(4, 1fr);} .g5row {grid-template-rows: repeat(5, 1fr);} .g6row {grid-template-rows: repeat(6, 1fr);}  .g7row {grid-template-rows: repeat(7, 1fr);} .g8row {grid-template-rows: repeat(8, 1fr);} .g9row {grid-template-rows: repeat(9, 1fr);} .g10row {grid-template-rows: repeat(10, 1fr);} .g11row {grid-template-rows: repeat(11, 1fr);} .g12row {grid-template-rows: repeat(12, 1fr);}
+
+.g2rowa {grid-template-rows: auto auto;} .g3rowa {grid-template-rows: repeat(3, auto);} .g4rowa {grid-template-rows: repeat(4, auto);} .g5rowa {grid-template-rows: repeat(5, auto);} .g6rowa {grid-template-rows: repeat(6, auto);}  .g7rowa {grid-template-rows: repeat(7, auto);} .g8rowa {grid-template-rows: repeat(8, auto);} .g9rowa {grid-template-rows: repeat(9, auto);} .g10rowa {grid-template-rows: repeat(10, auto);} .g11rowa {grid-template-rows: repeat(11, auto);} .g12rowa {grid-template-rows: repeat(12, auto);}
+
+/*Gap*/
+.gap0 {gap:0px;} .gap10p {gap:10px;} .gap02e {gap:0.2em;} .gap10e {gap:1em;}
+
+/* Grid Flow */
+.gflowr {grid-auto-flow: row;} .gflowc {grid-auto-flow: column;} .gflowrd {grid-auto-flow: row dense;}  .gflowcd {grid-auto-flow: column dense;}
+
+/*Grid Items*/
+.jgs {justify-content:start;} .jge {justify-content:end;} .jst {justify-content:stretch;}
+.span1c, .ch-span1c>* {grid-column-end: span 1;} .span2c, .ch-span2c>* {grid-column-end: span 2;} .span3c, .ch-span3c>* {grid-column-end: span 3;} .span4c, .ch-span4c>* {grid-column-end: span 4;} .span5c, .ch-span5c>* {grid-column-end: span 5;} .span6c, .ch-span6c>* {grid-column-end: span 5;}
+
+.span1r, .ch-span1r>* {grid-row-end: span 1;} .span2r, .ch-span2r>* {grid-row-end: span 2;} .span3r, .ch-span3r>* {grid-row-end: span 3;} .span4r, .ch-span4r>* {grid-row-end: span 4;} .span5r, .ch-span5r>* {grid-row-end: span 5;} .span6r, .ch-span6r>* {grid-row-end: span 6;}
+
+/*Text Styles*/
+.caption {font: italic normal 0.7em Georgia, serif;}
+.em06 {font-size:0.6em;} .em07 {font-size:0.7em;} .em08 {font-size:0.8em;} .em08 {font-size:0.9em;} .em11 {font-size:1.1em;} .em12 {font-size:1.2em;} .em14 {font-size:1.4em;} .em16 {font-size:1.6em;} .em18 {font-size:1.8em;} .em20 {font-size:2em;} .em22 {font-size:2.2em;} .em24 {font-size:2.4em;} .em28 {font-size:2.8em;} .em32 {font-size:3.2em;}
+.px10 {font-size:10px;} .px12 {font-size:12px;} .px14 {font-size:14px;} .px16 {font-size:16px;} .px18 {font-size:18px;} 
+.f1 {font-family: georgia, 'times new roman', serif;}
+.i {font-style:italic;} .b {font-weight:bold;} .u {text-decoration:underline;}
+.alignr {text-align:right;} .indent {text-indent:2em;}/*Indent first line of paragraph (to indent whole <p>, us ".padl" */
+.tshadow {text-shadow: 0px 0px 8px #000000;}
+
+/*Text Style Nullify*/
+.tn {color:initial; text-decoration:none;} .th * {color:inherit; text-decoration:none;}
+
+/*Tooltips*/
+.ttipa {}
+.ttip {visibility:hidden; width: 120px; background:#555; color:#FFF; padding:0.3em; position:absolute; z-index:1; opacity:0; transition: opacity 0.2s;}
+.ttipa:hover .ttip {visibility: visible; opacity:1;}
+
+/*Hidden*/
+.hid, .hidden {display:none;}
+
+/*== Layout ==*/
+/*Full viewport splash page/image to display at top of page - specify background:url() in HTML style attribute*/
+div#splash {display:flex; height:100%; background-size: cover; background-repeat:no-repeat; background-attachment:fixed; margin:-10px; margin-bottom:0px; padding:10px;}
+
+/*Masthead image, set aspect ratio/size - instead of splash*/
+div#masthead {background: inherit fixed no-repeat; margin:-10px -10px 0px -10px; padding:10px;}
+div#mastcontent {display:flex; background: inherit fixed no-repeat; margin:0px; padding:4px;}
+/*To set aspect ratio: "width:100%; padding-top: % h-w ratio"*/
+.invisible {visibility:hidden;} /* Alternatively, use img as placeholder */
+
+nav {position:sticky; top:0; background:#F0F0F0A0; color:#000; font-size:1em; padding: 0px 20px; box-shadow: 0px 5px 5px 0px rgba(255,255,255,0.3); z-index:999;}
+#navm {display:initial;} /* Nav Menu */ #navmtog {display:none; font-weight:; font-size:1.6em; padding:8px;}
+/*nav ul {list-style-type:none; display:flex; flex-flow:row-wrap; justify-content:flex-start; align-items:flex-end;} /*Menu as <ul> compatibility
+nav ul li a {color:inherit; text-decoration:none; font-weight:bold; display:block; padding:8px;}/**/
+nav a {color:inherit; text-decoration:none; font-weight:bold; display:inline-block; padding:8px;} /*Menu as series of <a> links*/
+nav div {display:flex; flex-flow:row-wrap; justify-content:flex-start; align-items:flex-end; } /* - in <div>*/
+nav a:hover {text-decoration:underline;}
+
+#main {position:relative;}
+.section {max-width:100%; margin:0px 0px; padding:24px;} /*Section*/
+div.art720 {width:720px; max-width:100%; padding:10px; margin:auto;}
+.ccol, .article {display:block; max-width:100%; padding:10px; margin:auto;} /*Specify different width*/
+
+div#tray {position:fixed; bottom:0px; left:0px; width:100%;} /*Sticky bottom*/
+div#tray > div {margin:auto;}
+/* Scrollbar */
+::-webkit-scrollbar {width:8px;} ::-webkit-scrollbar-track {background: #00000022;} ::-webkit-scrollbar-thumb {background: #FFFFFFFF; border:1px solid #888; border-radius:4px;} ::-webkit-scrollbar-thumb:hover {background: #FFFFFFFF;} ::webkit-scrollbar-button:single-button {background:#88888888; display:block; height:10px; width:10px;}
+
+/*Videos*/
+.contain {display:inline-block; text-align:center; position:relative;}
+video {max-width:100%;}
+.hidoverlay {display:none; position:absolute; top:5%; bottom:10%; left:5%; right:5%; width:90%; height:80%;} /* <a> */
+.hidoverlayt {display:none; position:absolute; top:10%; bottom:50%; left:10%; right:10%; width:80%; height:40%;} /* top */
+.hidoverlayb {display:none; position:absolute; top:50%; bottom:10%; left:10%; right:10%; width:80%; height:40%;} /* bottom */
+.hidoverlayl {display:none; position:absolute; top:10%; bottom:10%; left:10%; right:50%; width:40%; height:80%;} /* left */
+.hidoverlayr {display:none; position:absolute; top:10%; bottom:10%; left:50%; right:10%; width:40%; height:80%;} /* right */
+.fill {width:100%;height:100%;}
+
+/*Widths*/
+.w80 {width:80px;} .w100 {width:100px;} .w120 {width:120px;} .w160 {width: 160px;} .w200 {width: 200px;} .w240 {width: 240px;} .w280 {width: 280px;} .w320 {width: 320px;} .w400 {width: 400px;} .w500 {width: 500px;} .w600 {width: 600px;} .w720 {width: 720px;} .w840 {width: 840px;} .w960 {width: 960px;} .w1080 {width:1080px;}
+.w33pc {width:33%;} .w40pc {width:40%;} .w60pc {width:60%;} .w80pc {width:80%;} .w100pc {width:100%;}
+
+/*Widths - children*/
+.w80-ch > * {width:80px;} .w100-ch > * {width:100px;} .w120-ch >width:120px;} .w160-ch >{width: 160px;} .w200-ch > * {width: 200px;} .w240-ch > * {width: 240px;} .w280-ch > * {width: 280px;} .w320-ch > * {width: 320px;} .w400-ch > * {width: 400px;} .w500-ch > * {width: 500px;} .w600-ch > * {width: 600px;} .w720-ch > * {width: 720px;} .w840-ch > * {width: 840px;} .w960-ch > * {width: 960px;} .w1080-ch > * {width:1080px;}
+.w33pc-ch > * {width:33%;} .w40pc-ch > * {width:40%;} .w60pc-ch > * {width:60%;} .w80pc-ch > * {width:80%;} .w100pc-ch > * {width:100%;}
+
+/*Heights*/
+.h20 {height:20px;} .h40 {height:40px;} .h60 {height:60px;} .h80 {height:80px;} .h100 {height:100px;} .h120 {height:120px;} .h160 {height: 160px;} .h200 {height: 200px;} .h240 {height: 240px;} .h280 {height: 280px;} .h320 {height: 320px;} .h400 {height: 400px;} .h500 {height: 500px;} .h600 {height: 600px;} .h720 {height: 720px;} .h840 {height: 840px;} .h960 {height: 960px;} .h1080 {height:1080px;} /*Item heights*/
+
+/*Sizes*/
+.sz0, .ch-sz0 > * {width:100px; height:100px;} .s1, .ch-sz1 > * {width:120px; height:120px;} .sz2, .ch-sz2 > * {width:160px; height:160px;}.sz3, .ch-sz3 > * {width:200px; height:200px;} .sz4 .ch-sz4 > * {width:240px; height:240px;} .sz40 .ch-sz40 > * {width:240px; height:300px;} .sz5 .ch-sz5 > * {width:400px; height:300px;}
+
+
+.ftl {float:left;} .ftr {float:right;} /*Floating sidebar/boxes or images*/
+
+/* Flexbox horizontal slides */
+div.fslide {display:flex; overflow:scroll; flex-flow:row nowrap;}
+div.fslide > * {overflow-y:scroll; flex-shrink:0;}
+div.fslide1 > * {width:240px; height:300px; overflow-y:scroll; flex-shrink:0;}
+div.fslide > div img {margin:auto;}
+
+/* Grid horizontal slides */
+div.gslide {display:flex; overflow:scroll;}
+div.gslide > * {overflow-y:scroll; flex-shrink:0;}
+
+/* Transient Slider from vc.js*/
+div.trslider {display:block; position:relative; height:;}
+div.trslider > * {} .slideon {position: static; transition: opacity 2s;} .slideoff {position:absolute;}
+div.trslider img {max-width:100%; max-height:100%;}
+div.slidectrl {font: bold 28px Arial; text-align:center;}
+div.slidectrl a, div.slidectrl span {font: bold 28px Arial; text-decoration:none; margin:12px; padding:10px;}
+
+/* VC Web Apps */
+.display.record, .record.form {width:720px; max-width:100%; margin:auto;}
+.fieldlabel {opacity:0.5; font-size: 0.8em;}
+.formfield {margin:16px 0px;}
+input[type='text'] {width:400px;}
+input[value='Save'] {font-size:0.8em; color:#00000088; background:#EEE; /*background:url('http://localhost:3000/app/img/save.png') center/contain no-repeat;*/}
+textarea {display:block; width:600px; max-width:100%; height:100px; background:#FFFFFFEA; z-index:2;}
+textarea.html-input {}
+.html-input-label {margin-left: 1em; color:#888;}
+.vertical-menu > a {display:block;}
+
+/*list*/
+.list-entry {margin:20px; box-shadow:4px 4px 4px #00000055; background:#FFFFFFAA;}
+
+/* Misc objects */
+.bars {display:inline-block; height:12px; border: solid 1px #000;}
+
+@media only screen and (max-width: 600px){
+	#navmtog {display:block;}
+	#navm {display:none;}
+	nav a {padding:18px;}
+}
+@media only screen and (min-width:600px){
+	#navm {display:block;}
+}
