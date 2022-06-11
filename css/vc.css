@@ -22,6 +22,7 @@ li {margin-left:2em;}
 table {border-collapse: collapse;}
 table, td {border: 1px solid #000;} td {padding:4px;}
 input {padding:6px; font-size:16px;} button {padding:6px;}
+pre {overflow-x:100%; white-space: pre-wrap; word-wrap:break-word; font:inherit;}
 
 /*a:link {color:#0D0;} a:visited {color:#0D0} /*Link style*/
 [onClick] {cursor:pointer;}
