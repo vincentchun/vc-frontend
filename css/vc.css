@@ -1,32 +1,37 @@
 /* VC Learning Stylesheet, version 20200723, 
 /* Page templates, Copyright: Vincent G. Chun, VC Learning. Used under license. */
 
-body {font-family:Arial, Tahoma, Verdana, sans-serif; color:; margin:0px; overflow-x:hidden; position:relative;}
+:root {
+	--a: #00f;
+	--bg: #fff;
+	--fg: #000;
+}
+html {background-color:var(--bg); color:var(--fg)}
+body {font-family:Arial, Tahoma, Verdana, sans-serif; font-size:11pt; margin:0px; overflow-x:auto; position:relative;}
 
 /* Basic Elements*/
-* {margin:0; padding:0;}
+div {margin:0; padding:0;}
 p {font-size:1em; max-width:100%; margin:0.8em;}
-a {color:inherit; text-decoration:underline;}
+a {color:var(--a); text-decoration:underline;}
 h1 {font-size:2em; margin:1em;}
 h2 {font-size:1.8em; margin:1em;}
 h3 {font-size:1.6em; margin:1em;}
 h4 {font-size:1.4em; margin:1em;}
 h5 {font-size:1.2em; margin:1em;}
 h6 {font-size:1em; margin:1em;}
-h7 {font-size:1em; margin:1em;}
 div {max-width:100%; position:relative;}
 img {max-width:100%; display:block;}
 iframe {display:block; margin:auto; max-width:100%; max-height:100%;}
-hr.s1 {color: #000; background:#000;} hr.s2 {color: #000; background:#000; height:2px;} hr.s3 {color:#333; background: linear-gradient(to right, #CCC, #333, #CCC);}
-li {margin-left:2em;}
+hr.s1 {color: var(--fg); background:var(--fg);} hr.s2 {color: var(--fg); background:var(--fg); height:2px;} hr.s3 {color:#333; background: linear-gradient(to right, #CCC, #333, #CCC);}
 table {border-collapse: collapse;}
 table, td {border: 1px solid #000;} td {padding:4px;}
-input {padding:6px; font-size:16px;} button {padding:6px;}
+input {padding:4px;}
+button {padding:4px; color:var(--fg); background-color:var(--bg);}
 pre {overflow-x:100%; white-space: pre-wrap; word-wrap:break-word; font:inherit;}
 
 /*a:link {color:#0D0;} a:visited {color:#0D0} /*Link style*/
-[onClick] {cursor:pointer;}
-a.pganchor {position:relative; top:-60px;} /*Page anchor bookmarks, link with #id*/
+[onclick] {cursor:pointer;}
+a.anchor {position:relative; top:-60px;} /*Page anchor bookmarks, link with #id*/
 
 /* ## Colors ## */
 	/* Text */
@@ -58,10 +63,12 @@ a.hl {color:#0D0;} a.hl1  {color:#0D0; text-decoration:underline;}
 .box, .ch-box >* {border: 1px solid #000; padding:10px; margin:10px;} .box1, .ch-box1 >* {border: 1px solid #00000033; padding:10px; margin:10px;}
 
 /* Buttons*/
-/* Minimalistic */
-.button, .ibutton {padding:12px 16px; border:1px solid #00000044; border-radius:6px; box-shadow: 4px 4px 4px #00000088, -4px -4px 4px #FFFFFFFF; text-align:center;text-decoration:none; font-size:16px; font-weight:bold; position:relative; background: #FFF;}/*raised*/
-.ibutton:hover {box-shadow: 2px 2px 2px #00000088, -2px -2px 2px #FFFFFFFF;}/*raised*/
-.ibutton:active {box-shadow: 2px 2px 2px #00000088 inset, -2px -2px 2px #FFFFFFFF inset; outline:none;}/*raised*/
+/* Interactive Button */
+.ibttn {padding:6px 8px; border:1px solid #00000044; border-radius:4px; box-shadow:2px 2px 2px #00000088, -4px -4px 4px #FFFFFFFF;}
+.ibttn:hover {box-shadow: 1px 1px 1px #00000088, -1px -1px 1px #FFFFFFFF;}/*raised*/
+.ibttn:active {box-shadow: 1px 1px 1px #00000088 inset, -1px -1px 1px #FFFFFFFF inset; outline:none;}/*raised*/
+.ibttnl {padding:12px 16px; border:1px solid #00000044; border-radius:6px; box-shadow: 4px 4px 4px #00000088, -4px -4px 4px #FFFFFFFF; text-align:center;text-decoration:none; font-size:16px; font-weight:bold; position:relative; background: #FFF;}/*raised*/
+
 /* Other buttons */
 .button1 {padding:12px 16px; border:none; border-radius:6px; box-shadow: 4px 4px 4px #00000088, -4px -4px 4px #FFFFFFFF;}/*raised*/
 .button2 {/* background: #0AC124; Green */ border: none; border-radius:32px; color: white; padding: 12px 32px; text-align: center; text-decoration: none; font-size: 16px; font-weight:bold; position:relative; top:-12px;}
@@ -79,7 +86,8 @@ a.hl {color:#0D0;} a.hl1  {color:#0D0; text-decoration:underline;}
 .bottom-left {position:absolute; bottom:0px; left:0px;} .bottom {position:absolute; bottom:0px;}
 
 /*Margin & padding*/
-.margin, .margin12 {margin:12px;} .margin20 {margin:20px;} .margin30 {margin:30px;} .margin40 {margin:40px;} .margintb {margin-top: 20px; margin-bottom: 20px;} .pad, .pad12 {padding:12px;} .pad16 {padding:16px;} .pad20 {padding:20px;} .pad30 {padding:30px;} .pad40 {padding:40px;}
+.margin8 {margin:8px;} .margin, .margin10 {margin:10px;} .margin12 {margin:12px;} .margin20 {margin:20px;} .margin30 {margin:30px;} .margin40 {margin:40px;} .margintb {margin-top: 20px; margin-bottom: 20px;}
+.pad8 {padding:8px;} .pad, .pad10 {padding:10px;} .pad12 {padding:12px;} .pad16 {padding:16px;} .pad20 {padding:20px;} .pad30 {padding:30px;} .pad40 {padding:40px;}
 .padl {padding-left:12px;} .padl2 {padding-left:24px;} .padl3 {padding-left:36px;} /*Use this to indent entire paragraphs*/
 .vspace {padding:12px; margin:20px 0px;}
 .vmid {vertical-align:middle;}
@@ -187,29 +195,30 @@ div.f2l > div {flex: 0 0 48%} .f4l > div {flex: 0 0 24%;} .f6l > div {flex: 0 0 
 
 /*== Layout ==*/
 /*Full viewport splash page/image to display at top of page - specify background:url() in HTML style attribute*/
-div#splash {display:flex; height:100%; background-size: cover; background-repeat:no-repeat; background-attachment:fixed; margin:-10px; margin-bottom:0px; padding:10px;}
+#splash {display:flex; height:100%; background-size: cover; background-repeat:no-repeat; background-attachment:fixed; margin:-10px; margin-bottom:0px; padding:10px;}
 
 /*Masthead image, set aspect ratio/size - instead of splash*/
-div#masthead {background: inherit fixed no-repeat; margin:-10px -10px 0px -10px; padding:10px;}
-div#mastcontent {display:flex; background: inherit fixed no-repeat; margin:0px; padding:4px;}
+#masthead {background: inherit fixed no-repeat; margin:-10px -10px 0px -10px; padding:10px;}
+#mastcontent {display:flex; background: inherit fixed no-repeat; margin:0px; padding:4px;}
 /*To set aspect ratio: "width:100%; padding-top: % h-w ratio"*/
 .invisible {visibility:hidden;} /* Alternatively, use img as placeholder */
 
+/* Nav Menu */
 nav {position:sticky; top:0; background:#F0F0F0A0; color:#000; font-size:1em; padding: 0px 20px; box-shadow: 0px 5px 5px 0px rgba(255,255,255,0.3); z-index:999;}
-#navm {display:initial;} /* Nav Menu */ #navmtog {display:none; font-weight:; font-size:1.6em; padding:8px;}
+#navm {display:initial;} #navmtog {display:none; font-weight:; font-size:1.6em; padding:8px;}
 /*nav ul {list-style-type:none; display:flex; flex-flow:row-wrap; justify-content:flex-start; align-items:flex-end;} /*Menu as <ul> compatibility
 nav ul li a {color:inherit; text-decoration:none; font-weight:bold; display:block; padding:8px;}/**/
 nav a {color:inherit; text-decoration:none; font-weight:bold; display:inline-block; padding:8px;} /*Menu as series of <a> links*/
 nav div {display:flex; flex-flow:row-wrap; justify-content:flex-start; align-items:flex-end; } /* - in <div>*/
 nav a:hover {text-decoration:underline;}
 
-#main {position:relative;}
+main, #main {position:relative;}
 .section {max-width:100%; margin:0px 0px; padding:24px;} /*Section*/
-div.art720 {width:720px; max-width:100%; padding:10px; margin:auto;}
+.art720 {width:720px; max-width:100%; padding:10px; margin:auto;}
 .ccol, .article {display:block; max-width:100%; padding:10px; margin:auto;} /*Specify different width*/
 
-div#tray {position:fixed; bottom:0px; left:0px; width:100%;} /*Sticky bottom*/
-div#tray > div {margin:auto;}
+footer {position:fixed; bottom:0px; left:0px; width:100%;} /*Sticky bottom*/
+footer > div {margin:auto;}
 /* Scrollbar */
 ::-webkit-scrollbar {width:8px;} ::-webkit-scrollbar-track {background: #00000022;} ::-webkit-scrollbar-thumb {background: #FFFFFFFF; border:1px solid #888; border-radius:4px;} ::-webkit-scrollbar-thumb:hover {background: #FFFFFFFF;} ::webkit-scrollbar-button:single-button {background:#88888888; display:block; height:10px; width:10px;}
 
@@ -236,7 +245,6 @@ video {max-width:100%;}
 
 /*Sizes*/
 .sz0, .ch-sz0 > * {width:100px; height:100px;} .s1, .ch-sz1 > * {width:120px; height:120px;} .sz2, .ch-sz2 > * {width:160px; height:160px;}.sz3, .ch-sz3 > * {width:200px; height:200px;} .sz4 .ch-sz4 > * {width:240px; height:240px;} .sz40 .ch-sz40 > * {width:240px; height:300px;} .sz5 .ch-sz5 > * {width:400px; height:300px;}
-
 
 .ftl {float:left;} .ftr {float:right;} /*Floating sidebar/boxes or images*/
 
@@ -267,9 +275,6 @@ textarea {display:block; width:600px; max-width:100%; height:100px; background:#
 textarea.html-input {}
 .html-input-label {margin-left: 1em; color:#888;}
 .vertical-menu > a {display:block;}
-
-/*list*/
-.list-entry {margin:20px; box-shadow:4px 4px 4px #00000055; background:#FFFFFFAA;}
 
 /* Misc objects */
 .bars {display:inline-block; height:12px; border: solid 1px #000;}
